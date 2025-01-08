@@ -8,8 +8,12 @@ function QuestionCard() {
     return(
         <div className='questionCard'>
            <div className='questionCard-top'>
-            <Tag tagNames={data.tags}/>
-            <img src='client\src\components\static\Frame 2211.png'/>
+            <span className='tags'>
+                { data.tags.map((tag)=> 
+                    <Tag tagName={tag}/>
+                )}
+            </span>
+            <span className='startup-logo'></span>
            </div>
            <p id='firstTextP'>{data.text}</p>
            <p id='secondTextP'>{data.subText}</p>

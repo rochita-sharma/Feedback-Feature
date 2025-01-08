@@ -1,5 +1,17 @@
-.Card{
+.questionCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #F8F8F8;
-    height: fit-content;
-    width: fit-content;
+    height: 30%;
+    width: 65%;
+}
+.questionCard-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.startup-logo {
+    background: url(D:\feedback_feature\client\src\components\static\Frame2211.png);
 }

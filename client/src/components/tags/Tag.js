@@ -3,16 +3,11 @@ import './Tag.css';
 
 function Tag(props) {
 
-    function tagIteration() {
-        console.log(props.tagNames)
-        props.tagNames.map((tag)=> {
-            return (<span>{tag}</span>);
-        });
-    }
-
+    console.log('props:',props);
+    
     return (
         <div className="questionTag">
-         {tagIteration()}
+         {props.tagName}
         </div>
     );
 }

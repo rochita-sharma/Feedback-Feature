@@ -4,7 +4,7 @@ import QuestionCard from "../questionCard/QuestionCard";
 
 function FeedbackPage() {
     return (
-        <div>
+        <div className="FeedbackPage">
             <QuestionCard />
         </div>
     );
