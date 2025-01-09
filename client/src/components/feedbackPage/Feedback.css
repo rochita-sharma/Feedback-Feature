@@ -1,5 +1,10 @@
 .FeedbackPage {
-    background-color: #0F0F0F;
+    width: 100%;
+    height: 100vh;
+    background-color: #0F0F0F; 
+}
+
+.feedbackPageCards {
     display: flex;
     flex-direction: column;
     justify-content: center;

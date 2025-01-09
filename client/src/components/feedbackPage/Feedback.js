@@ -1,11 +1,15 @@
 import React from "react";
-import './feedback.css';
+import './Feedback.css';
+import Navbar from "../navbarFeedback/navbarFeedback";
 import QuestionCard from "../questionCard/QuestionCard";
 
 function FeedbackPage() {
     return (
         <div className="FeedbackPage">
-            <QuestionCard />
+            <Navbar />
+            <div className="feedbackPageCards">
+              <QuestionCard />
+            </div>
         </div>
     );
 }
