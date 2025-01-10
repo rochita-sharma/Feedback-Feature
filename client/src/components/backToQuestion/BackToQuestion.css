@@ -1,0 +1,10 @@
+.backToQuestion {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: url(D:\feedback_feature\client\src\components\static\Frame65.png);
+    background-size: 100%;
+    height: 32px;
+    width: 250px;
+    margin: 16px 32px;
+}

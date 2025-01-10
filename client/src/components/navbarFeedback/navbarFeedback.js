@@ -1,14 +1,14 @@
 import React from 'react';
-import './navbarFeedback.css';
+import './NavbarFeedback.css';
 
-function navbarFeedback() {
+function NavbarFeedback() {
 
     return ( 
         <div className='navbarFeedback'>
          <span className='productLogo'></span>
-         <div>
-            <div className='dropdown1'></div>
-            <div className='dropdown2'></div>
+         <div className='rightNav'>
+            <div className='dropdown1'>Learn <span className='dropdownImage'></span></div>
+            <div className='dropdown2'>Practice <span className='dropdownImage'></span></div>
             <div className='profile'></div>
          </div>
         </div>
@@ -16,4 +16,4 @@ function navbarFeedback() {
 
 }
 
-export default navbarFeedback;
+export default NavbarFeedback;
