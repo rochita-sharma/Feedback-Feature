@@ -1,0 +1,50 @@
+.profileOfAnswerCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.userProfileDetails{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profileImage {
+    background: url(D:\feedback_feature\client\src\components\static\Ellipse52.png);
+    background-size: 100%;
+    height: 40px;
+    width: 40px; 
+}
+
+.profileName {
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.answeringDate {
+    font-family: 'poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.editAnswer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.editIcon {
+    background: url(D:\feedback_feature\client\src\components\static\Vector3.png);
+    background-size: 100%;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}

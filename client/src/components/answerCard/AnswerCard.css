@@ -1,0 +1,16 @@
+.answerCard {
+    margin: 16px;
+    padding: 16px 32px;
+    background-color: #DEE7FF;
+    height: fit-content;
+    width: 48%;
+    border: 1px;
+    border-radius: 6px;
+}
+
+.answerText {
+    font-family: 'poppins';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}

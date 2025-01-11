@@ -1,8 +1,9 @@
 import React from "react";
 import './Feedback.css';
-import Navbar from "../navbarFeedback/NavbarFeedback";
+import Navbar from '../navbarFeedback/NavbarFeedback';
 import QuestionCard from "../questionCard/QuestionCard";
 import BackToQuestion from "../backToQuestion/BackToQuestion";
+import AnswerCard from "../answerCard/AnswerCard";
 
 function FeedbackPage() {
     return (
@@ -11,7 +12,8 @@ function FeedbackPage() {
             <BackToQuestion />
             <div className="feedbackPageCards">
               <QuestionCard />
-            </div>
+              <AnswerCard />
+            </div>  
         </div>
     );
 }
