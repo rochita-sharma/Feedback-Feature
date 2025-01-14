@@ -1,0 +1,27 @@
+.answerCountAndFilter {
+    width: 52%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.answers {
+    color: #F8F8F8;
+    padding: 8px 0px;
+    font-family: 'poppins';
+    font-weight: 700;
+    font-size:  20px;
+    line-height: 36px;
+}
+
+.sortSpan {
+    color: #F8F8F8;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21.78px;
+    padding-right: 5px;
+}
+
+ 

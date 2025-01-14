@@ -5,12 +5,12 @@
     display: flex;
     flex-direction: column;
     -ms-overflow-style: none;  /* IE and Edge */
-    overflow-y: hidden;
+    overflow-x: hidden;
     scrollbar-width: none;
 }
 .FeedbackPage::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .feedbackPageCards {
     display: flex;

@@ -1,0 +1,26 @@
+.floatingActionItem {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fabIcon {
+    background: url(D:\feedback_feature\client\src\components\static\FabD.png);
+    background-size: 100%;
+    width: 60px;
+    height: 60px;
+}
+
+.OptionMenu{
+    display: flex;
+    flex-direction: column;
+}
+
+.XIcon {
+    background: url(D:\feedback_feature\client\src\components\static\FabX.png);
+    background-size: 100%;
+    width: 60px;
+    height: 60px;
+}
