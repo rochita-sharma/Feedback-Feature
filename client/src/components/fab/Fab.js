@@ -17,12 +17,12 @@ function Fab() {
     return (
         <div className='floatingActionItem'>
         {  isOpen 
-        ?(<div className='OptionMenu'>
-           {data.map((item)=>
-           <FabMenuItem imageUrl={item.imageUrl} title={item.text}/>)}
-           <span className='XIcon' onClick={toggleOnClick}></span>
-          </div>)
-        :(<span className='fabIcon' onClick={toggleOnClick}></span>)
+            ?(<div className='OptionMenu'>
+            {data.map((item)=>
+            <FabMenuItem imageUrl={item.imageUrl} title={item.text}/>)}
+            <span className='XIcon' onClick={toggleOnClick}></span>
+            </div>)
+            :(<span className='fabIcon' onClick={toggleOnClick}></span>)
         }
         </div>
     );

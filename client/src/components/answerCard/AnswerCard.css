@@ -14,3 +14,65 @@
     font-size: 18px;
     line-height: 27px;
 }
+
+.answerComment{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 18px;
+}
+
+.likeOption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.likeOption p{
+    margin-left: 6px;
+    margin-right: 10px;
+    font-family: 'poppins';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+}
+.likeAnswer {
+    background: url(D:\feedback_feature\client\src\components\static\Group.png);
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.commentArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.commentInput {
+    margin-left: 5px;
+    width: 30vw;
+    border: 1px solid #0F0F0F;
+    padding: 8px;
+    border-radius: 6px;
+    justify-content: space-between;
+}
+
+.commentIcon {
+    background: url(D:\feedback_feature\client\src\components\static\Frame86.png);
+    background-size: 100%;
+    width: 21px;
+    height: 19px;
+}
+
+.postButton {
+    margin: 10px;
+    width: 76px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid #000000;
+    background-color: #F5F5F580;
+    color: #00000080;
+    padding: 8px 16px;
+}
