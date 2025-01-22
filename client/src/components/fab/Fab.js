@@ -18,8 +18,10 @@ function Fab() {
         <div className='floatingActionItem'>
         {  isOpen 
             ?(<div className='OptionMenu'>
-            {data.map((item)=>
-            <FabMenuItem imageUrl={item.imageUrl} title={item.text}/>)}
+            <FabMenuItem title="Report an issue" imageUrl="/static/ReportIssue.jpg"/>
+            <FabMenuItem title="Share Feedback" imageUrl="/static/ShareFeedback.png"/>
+            <FabMenuItem title="Give Suggestion" imageUrl="/static/GiveSuggestion.png"/>
+            <FabMenuItem title="Contact Us" imageUrl="/static/ContactUs.png"/>
             <span className='XIcon' onClick={toggleOnClick}></span>
             </div>)
             :(<span className='fabIcon' onClick={toggleOnClick}></span>)

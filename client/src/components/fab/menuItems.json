@@ -1,7 +1,7 @@
 [
     {
         "imageUrl":"",
-        "text":"Report an issue"
+        "text":""
     },
     {
         "imageUrl":"",
@@ -9,10 +9,10 @@
     },
     {
         "imageUrl":"",
-        "text":"Give Suggestion"
+        "text":""
     },
     {
         "imageUrl":"D:/feedback_feature/client/src/components/static/ContactUs.png",
-        "text":"Contact Us"
+        "text":""
     }
 ]
