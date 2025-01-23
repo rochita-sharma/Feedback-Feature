@@ -5,23 +5,31 @@ import FabMenuItem from '../fabMenuItems/FabMenuItems';
 
 function Fab() {
     const [isOpen, setIsOpen] =  useState(false);
+    const [style, setStyle] = useState("optionMenu");
+    let reportIssue=require("../static/ReportAnIssue.png");
+    let ShareFeedback=require("../static/ShareFeedback.png");
+    let giveSuggestion=require("../static/GiveSuggestion.png");
+    let contactUs=require("../static/ContactUs.png");
 
     const toggleOnClick = () =>{
         setIsOpen(!isOpen);
     }
 
-    // function FloatingActionBtn() {
-    //     return (
-    //     );
-    // }
+     
+    function handleOnClick(){
+        console.log("fab menu item just clicked")
+        if(style !== "optionMenu") setStyle("optionMenu");
+        else setStyle("writeIssue");
+    }
+
     return (
         <div className='floatingActionItem'>
         {  isOpen 
-            ?(<div className='OptionMenu'>
-            <FabMenuItem title="Report an issue" imageUrl="/static/ReportIssue.jpg"/>
-            <FabMenuItem title="Share Feedback" imageUrl="/static/ShareFeedback.png"/>
-            <FabMenuItem title="Give Suggestion" imageUrl="/static/GiveSuggestion.png"/>
-            <FabMenuItem title="Contact Us" imageUrl="/static/ContactUs.png"/>
+            ?(<div className={style}>
+            <FabMenuItem title="Report an Issue" imageUrl={reportIssue} onClick={handleOnClick}/>
+            <FabMenuItem title="Share Feedback" imageUrl={ShareFeedback}/>
+            <FabMenuItem title="Give Suggestion" imageUrl={giveSuggestion}/>
+            <FabMenuItem title="Contact Us" imageUrl={contactUs}/>
             <span className='XIcon' onClick={toggleOnClick}></span>
             </div>)
             :(<span className='fabIcon' onClick={toggleOnClick}></span>)

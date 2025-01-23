@@ -11,7 +11,7 @@
 }
 
 .productLogo {
-    background: url(D:\feedback_feature\client\src\components\static\BlackandWhiteLogo.png);
+    background: url(../static/BlackandWhiteLogo.png);
     background-size: 100%;
     width: 350px;
     height: 49px;
@@ -24,7 +24,7 @@
 }
 
 .dropdownImage {
-    background: url(D:\feedback_feature\client\src\components\static\Vector1.png);
+    background: url(../static/Vector1.png);
     background-size: 100%;
     width: 15px;
     height: 9px;
@@ -55,7 +55,7 @@
 .profile {
      display: flex;
      flex-direction: row;
-     background: url(D:\feedback_feature\client\src\components\static\Ellipse52.png);
+     background: url(../static/Ellipse52.png);
      background-size: 100%;
      height: 40px;
      width: 40px;

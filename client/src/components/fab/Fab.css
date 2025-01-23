@@ -7,21 +7,28 @@
 }
 
 .fabIcon {
-    background: url(D:\feedback_feature\client\src\components\static\FabD.png);
+    background: url(../static/FabD.png);
     background-size: 100%;
     width: 60px;
     height: 60px;
 }
 
-.OptionMenu{
+.optionMenu{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
 }
 
+.writeIssue {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
 .XIcon {
-    background: url(D:\feedback_feature\client\src\components\static\FabX.png);
+    background: url(../static/FabX.png);
     background-size: 100%;
     width: 60px;
     height: 60px;

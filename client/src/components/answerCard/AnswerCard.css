@@ -37,7 +37,7 @@
     line-height: 30px;
 }
 .likeAnswer {
-    background: url(D:\feedback_feature\client\src\components\static\Group.png);
+    background: url(../static/Group.png);
     background-size: 100%;
     width: 20px;
     height: 20px;
