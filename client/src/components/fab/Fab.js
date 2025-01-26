@@ -1,7 +1,6 @@
 import {useState} from 'react';
 import data from './menuItems.json';
 import './Fab.css';
-import FabMenuItem from '../fabMenuItems/FabMenuItems';
 
 function Fab() {
     const [isOpen, setIsOpen] =  useState(false);
@@ -22,14 +21,27 @@ function Fab() {
         else setStyle("writeIssue");
     }
 
+    function FabMenuItem(props){
+        return (
+        props.style === 'optionMenu'
+        ? <div className='fabMenuItem' onClick={props.onClick}>
+            <p style={{backgroundColor:"white", padding: "8px", borderRadius: "6px", marginRight:"5px"}}>{props.title}</p>
+            <span className='fabMenuIcons'>{props.imageUrl && <img src={props.imageUrl} alt="Dynamic" style={{maxWidth:"100%", width:'50px', height:'50px', borderRadius:"50%"}}/>}</span>
+          </div>
+        :<div className='fabMenuItem' onClick={props.onClick}>
+           <span className='fabMenuIcons'>{props.imageUrl && <img src={props.imageUrl} alt="Dynamic" style={{maxWidth:"100%", width:'50px', height:'50px', borderRadius:"50%"}}/>}</span>
+        </div>
+    );
+    }
+
     return (
         <div className='floatingActionItem'>
         {  isOpen 
             ?(<div className={style}>
-            <FabMenuItem title="Report an Issue" imageUrl={reportIssue} onClick={handleOnClick}/>
-            <FabMenuItem title="Share Feedback" imageUrl={ShareFeedback}/>
-            <FabMenuItem title="Give Suggestion" imageUrl={giveSuggestion}/>
-            <FabMenuItem title="Contact Us" imageUrl={contactUs}/>
+                <FabMenuItem title="Report an Issue" imageUrl={reportIssue} style={style} onClick={handleOnClick}/>
+                <FabMenuItem title="Share Feedback" imageUrl={ShareFeedback} style={style} onClick={handleOnClick}/>
+                <FabMenuItem title="Give Suggestion" imageUrl={giveSuggestion} style={style} onClick={handleOnClick}/>
+                <FabMenuItem title="Contact Us" imageUrl={contactUs} style={style} onClick={handleOnClick}/>
             <span className='XIcon' onClick={toggleOnClick}></span>
             </div>)
             :(<span className='fabIcon' onClick={toggleOnClick}></span>)
