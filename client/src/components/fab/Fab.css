@@ -2,6 +2,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
+    bottom: 0px;
     display: flex;
     flex-direction: column;
 }
@@ -34,12 +35,21 @@
     justify-content: flex-end;
 }
 
-.fabMenuItem {
+.fabMenuItems {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
 }
+
+.secondNavigation{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .clickedModal{
+
+} */
 
 .XIcon {
     background: url(../static/FabX.png);

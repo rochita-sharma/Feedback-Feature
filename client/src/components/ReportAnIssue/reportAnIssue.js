@@ -1,10 +1,10 @@
-import './reportAnIssue.css';
+import './ReportAnIssue.css';
 
-function reportAnIssue() {
+function ReportAnIssue() {
     return (
         <div className='fabReportCard'>
           <div className='reportHeading'>
-            <p>Let us know about the <bold>Issue</bold> you are facing right now!</p>
+            <p>Let us know about the <b>Issue</b> you are facing right now!</p>
             <span></span>
           </div>
           <div className='chooseSection'>
@@ -13,18 +13,18 @@ function reportAnIssue() {
                 <option>Interview Questions</option>
                 <option>option 2</option>
             </select>
-          </div>
-          <div className='descriptionOfReport'>
-            <p>Describe the issue in detail</p>
-            <input placeholder='Write here...' required />
+            <div>
+              <p>Describe the issue in detail</p>
+              <input className='descriptionOfReport' placeholder='Write here...' required />
+            </div>
           </div>
           <div className='emailOfReport'>
-            <p>Enter your email to receive an update</p>
-            <input placeholder='Enter your Email'/>
-          </div>
-          <button>Submit</button>
+              <p>Enter your email to receive an update</p>
+              <input placeholder='Enter your Email'/>
+              <button className='submitEmailButton'>Submit</button>
+            </div>
         </div>
     );
 }
 
-export default reportAnIssue;
+export default ReportAnIssue;

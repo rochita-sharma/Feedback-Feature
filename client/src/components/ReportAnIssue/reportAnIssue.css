@@ -1,6 +1,76 @@
 .fabReportCard{
     display: flex;
     flex-direction: column;
-    height: 500px;
-    width: 250px;
+    height: 72vh;
+    width: 25vw;
+    background-color: white;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.reportHeading {
+    font: 'poppins';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+    align-items: center;
+    margin: 0px 3px;
+}
+.reportHeading span {
+    height: 1px;
+    width: 75%;
+    background-color: #CCCCCC;
+}
+
+.chooseSection p{
+    font-family: 'poppins';
+    font-weight: 300;
+    font-size: 13px;
+}
+.chooseSection select {
+    width: 95%;
+    height: 45px;
+    background-color: #E0E0E0;
+    border-radius: 8px;
+    padding:12px 6px;
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 13px;
+}
+.descriptionOfReport{
+    width: 95%;
+    height: 100px;
+    background-color: #E0E0E0;
+    text-align:initial;
+}
+
+.emailOfReport{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.emailOfReport p{
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.emailOfReport input{
+    height: 30px;
+    width: 95%;
+    border-radius: 8px;
+}
+.submitEmailButton{
+    height: 35%;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-top: 7px;    
+    background-color: #0F0F0F;
+    color: white;
+    border-radius: 4px;
+    opacity: 60%;
+    position: relative;
+    right: -17.5vw;
 }
